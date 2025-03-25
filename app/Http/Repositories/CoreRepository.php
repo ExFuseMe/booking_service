@@ -2,7 +2,6 @@
 
 namespace App\Http\Repositories;
 
-use Illuminate\Support\Facades\Schema;
 
 abstract class CoreRepository
 {
