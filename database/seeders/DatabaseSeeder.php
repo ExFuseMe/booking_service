@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()
             ->create([
-                'email' => 'admin@admin.com',
+                'email' => $this->command->ask("Введите ваш email(для тестирование нотификаций)") ?? 'admin@admin.com',
                 'password' => Hash::make('admin')
             ]);
 

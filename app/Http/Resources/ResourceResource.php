@@ -12,6 +12,7 @@ class ResourceResource extends JsonResource
         return [
             'id' => $this->resource->id,
             'name' => $this->resource->name,
+            'type' => $this->resource->type,
             'description' => $this->when($this->resource->description != '', $this->resource->description),
         ];
     }

@@ -14,7 +14,7 @@ class ResourceRepository extends CoreRepository
     public function getResourceList()
     {
         $result = $this->startConditions()
-            ->all(['id', 'name', 'description']);
+            ->all(['id', 'name', 'type', 'description']);
 
         return $result;
     }
